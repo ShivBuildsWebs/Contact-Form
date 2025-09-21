@@ -15,7 +15,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Add some default padding */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,4 +235,40 @@ textarea:focus + .focus-border {
     color: #dc3545;
     opacity: 1;
     transform: translateY(0);
+}
+
+/* --- Responsive adjustments for phones --- */
+@media (max-width: 600px) {
+    body {
+        /* Remove strict centering on small screens */
+        align-items: flex-start;
+        padding-top: 40px;
+        min-height: auto;
+    }
+    
+    .form-wrapper {
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .form-header h1 {
+        font-size: 2em;
+    }
+
+    .form-header p {
+        font-size: 1em;
+    }
+
+    /* Adjust padding of inputs and button for better fit */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        padding: 10px 12px;
+    }
+
+    .submit-btn {
+        padding: 12px 20px;
+    }
 }

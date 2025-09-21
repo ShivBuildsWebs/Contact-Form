@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm');
     const formStatus = document.getElementById('formStatus');
-    const scriptUrl = "YOUR_NEW_GOOGLE_APPS_SCRIPT_URL_HERE"; // <-- Paste the URL you just copied here
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbwcH_VLBMBCq8BKsC7DEDl7BM0IKnbqvdX14aEJkWj9_OZiMGhPHXdai2KhJE6dvBBQMA/exec"; // <-- Paste the URL you just copied here
 
     form.addEventListener('submit', async (event) => {
         event.preventDefault();

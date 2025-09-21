@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="form-wrapper">
+        <div class="form-header">
+            <h1>Unlock Your Potential</h1>
+            <p>Ready to get started? Fill out the form below!</p>
+        </div>
+        <form id="contactForm" class="animated-form" name="contact" netlify>
+            <div class="input-group">
+                <label for="fullName">Your Full Name</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="e.g. Jane Doe">
+                <span class="focus-border"></span>
+            </div>
+            <div class="input-group">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" name="emailAddress" required placeholder="e.g. jane.doe@example.com">
+                <span class="focus-border"></span>
+            </div>
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g. (123) 456-7890">
+                <span class="focus-border"></span>
+            </div>
+            <div class="input-group">
+                <label for="message">Anything else you'd like to tell us?</label>
+                <textarea id="message" name="message" rows="3" placeholder="I'm excited to get started..."></textarea>
+                <span class="focus-border"></span>
+            </div>
+            <button type="submit" class="submit-btn">
+                <span class="btn-text">Submit</span>
+                <span class="btn-icon">&#10140;</span>
+            </button>
+            <div id="formStatus" class="form-status"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
